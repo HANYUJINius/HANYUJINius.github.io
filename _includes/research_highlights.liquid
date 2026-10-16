@@ -1,18 +1,63 @@
 <div class="research-highlights">
-  <div class="row">
-    <div class="col-md-6 mb-4">
-      <h4>Research Project 01</h4>
-      <p class="text-muted">
-        Project description coming soon.
-      </p>
-    </div>
 
-    <div class="col-md-6 mb-4">
-      <h4>Research Project 02</h4>
-      <p class="text-muted">
+  <div class="row align-items-center mb-4">
+    <div class="col-4">
+      <div class="research-placeholder">
+        <i class="fas fa-image"></i>
+      </div>
+    </div>
+    <div class="col-8">
+      <h5 class="mb-2">Research Project 01</h5>
+      <p class="mb-2">
         Project description coming soon.
       </p>
+      <a href="{{ '/projects/' | relative_url }}">
+        Learn More →
+      </a>
     </div>
   </div>
+
+  <hr>
+
+  <div class="row align-items-center mb-4">
+    <div class="col-4">
+      <div class="research-placeholder">
+        <i class="fas fa-image"></i>
+      </div>
+    </div>
+    <div class="col-8">
+      <h5 class="mb-2">Research Project 02</h5>
+      <p class="mb-2">
+        Project description coming soon.
+      </p>
+      <a href="{{ '/projects/' | relative_url }}">
+        Learn More →
+      </a>
+    </div>
+  </div>
+
 </div>
 
+<style>
+.research-placeholder {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  background: var(--global-card-bg-color, #eee);
+  border: 1px solid var(--global-divider-color, #ddd);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--global-text-color-light, #888);
+  font-size: 2rem;
+}
+
+.research-highlights h5 {
+  font-weight: 600;
+}
+
+.research-highlights p {
+  font-size: 0.9rem;
+  color: var(--global-text-color-light, #888);
+}
+</style>
