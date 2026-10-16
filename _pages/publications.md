@@ -1,4 +1,3 @@
-
 ---
 layout: page
 permalink: /publications/
@@ -9,53 +8,49 @@ nav_order: 2
 ---
 
 <style>
-/* ========================================
-   PUBLICATIONS — CLEAN ACADEMIC STYLE
-   ======================================== */
-
-/* Paper title: strongest emphasis */
+/* Publication typography */
 .publications ol.bibliography li .title {
   font-size: 1rem !important;
   font-weight: 700 !important;
-  line-height: 1.5;
+  line-height: 1.45;
 }
 
-/* Coauthors: light, regular weight */
-.publications ol.bibliography li .author {
+/* Coauthors: lighter and regular */
+.publications ol.bibliography li .author,
+.publications ol.bibliography li .author a {
   font-size: 0.92rem !important;
   font-weight: 400 !important;
   color: var(--global-text-color-light, #999) !important;
-  line-height: 1.6;
+  line-height: 1.55;
 }
 
-.publications ol.bibliography li .author a {
-  font-weight: 400 !important;
-  color: inherit !important;
-}
-
-/* Your name: bold + single underline */
+/* Highlighted author: bold + single underline */
 .publications ol.bibliography li .author em {
   font-style: normal !important;
   font-weight: 700 !important;
   color: var(--global-text-color) !important;
   text-decoration: none !important;
-  border: 0 !important;
-  border-bottom: 1px solid currentColor !important;
+  border: none !important;
   box-shadow: none !important;
 }
 
-.publications ol.bibliography li .author em *,
-.publications ol.bibliography li .author em a {
+.publications ol.bibliography li .author em a,
+.publications ol.bibliography li .author em * {
   font-weight: 700 !important;
   color: inherit !important;
   text-decoration: none !important;
-  border: 0 !important;
+  border: none !important;
   box-shadow: none !important;
 }
 
-/* Conference/journal: smaller and muted */
+.publications ol.bibliography li .author em {
+  border-bottom: 1px solid currentColor !important;
+}
+
+/* Conference and journal names */
 .publications ol.bibliography li .periodical,
-.publications ol.bibliography li .periodical em {
+.publications ol.bibliography li .periodical em,
+.publications ol.bibliography li .periodical span {
   font-size: 0.88rem !important;
   font-weight: 400 !important;
   font-style: italic !important;
@@ -63,52 +58,34 @@ nav_order: 2
   line-height: 1.5;
 }
 
-/* Conference labels: muted academic blue */
-.publications ol.bibliography li .abbr .badge,
-.publications ol.bibliography li .abbr abbr {
-  display: inline-block;
+/* Conference badges: muted blue */
+.publications ol.bibliography li .abbr .badge {
   background-color: #5b91ad !important;
-  color: #ffffff !important;
+  color: #fff !important;
   font-size: 0.72rem !important;
   font-weight: 600 !important;
-  border: none !important;
-  border-radius: 4px !important;
   padding: 4px 9px !important;
-  text-align: center;
+  border-radius: 4px !important;
+  border: none !important;
 }
 
-/* Publication link buttons */
-.publications ol.bibliography li .links a.btn,
+/* Small buttons */
 .publications ol.bibliography li .links .btn {
   font-size: 0.78rem !important;
   font-weight: 400 !important;
   border-radius: 4px;
-  margin-right: 5px;
-  margin-bottom: 5px;
 }
 
-/* Publication spacing */
+/* Spacing */
 .publications ol.bibliography li {
   margin-bottom: 1.3rem;
 }
 
 .publications ol.bibliography li .links {
-  margin-top: 0.55rem;
-}
-
-/* Mobile typography */
-@media (max-width: 576px) {
-  .publications ol.bibliography li .title {
-    font-size: 0.95rem !important;
-  }
-
-  .publications ol.bibliography li .author {
-    font-size: 0.85rem !important;
-  }
-
-  .publications ol.bibliography li .periodical {
-    font-size: 0.82rem !important;
-  }
+  margin-top: 0.5rem;
 }
 </style>
 
+<div class="publications">
+  {% bibliography %}
+</div>
