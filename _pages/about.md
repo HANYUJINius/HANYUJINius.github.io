@@ -27,11 +27,36 @@ I am currently a research intern at **KAIST**, and I will begin my master's stud
 
 My research interests lie in **Generative AI** and **Computer Vision**, with a particular focus on generative models, visual understanding, and representation learning.
 
+<hr style="margin-top: 2.5rem; margin-bottom: 1.5rem; border-color: var(--global-divider-color);">
+
 
 <h3 style="font-size: 1.45rem; font-weight: 600; margin-top: 2rem; margin-bottom: 0.5rem;">
   Research Highlights
 </h3>
 
 {% include research_highlights.liquid %}
+
+{% include research_highlights.liquid %}
+
+<style>
+.profile {
+  width: 220px !important;
+  max-width: 100%;
+  margin-left: 25px;
+}
+
+.profile img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .profile {
+    width: 180px !important;
+    margin-left: 15px;
+  }
+}
+</style>
 
 
