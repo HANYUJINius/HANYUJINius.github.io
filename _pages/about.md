@@ -22,10 +22,12 @@ latest_posts:
   enabled: false
 ---
 
-I am currently a research intern at KAIST and will begin my master's studies in 2027.
+
+I am currently a research intern at **KAIST**, and I will begin my master's studies in 2027.
+
+My research interests lie in **Generative AI** and **Computer Vision**, with a particular focus on generative models, visual understanding, and representation learning.
 
 ## Research Highlights
 
-Coming soon.
+*Coming soon.*
 
-## Latest News
