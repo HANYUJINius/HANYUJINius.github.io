@@ -18,3 +18,25 @@ nav_order: 2
 {% bibliography %}
 
 </div>
+
+
+<style>
+/* Highlight the website owner's name */
+.publications ol.bibliography li .author em {
+  font-style: normal;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* Publication title */
+.publications ol.bibliography li .title {
+  font-weight: 700;
+}
+
+/* Coauthors remain regular weight */
+.publications ol.bibliography li .author {
+  font-weight: 400;
+}
+</style>
+
