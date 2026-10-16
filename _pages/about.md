@@ -29,5 +29,5 @@ My research interests lie in **Generative AI** and **Computer Vision**, with a p
 
 ## Research Highlights
 
-*Coming soon.*
+Selected research projects and recent work will be featured here.
 
