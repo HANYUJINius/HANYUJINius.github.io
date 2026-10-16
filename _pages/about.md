@@ -36,11 +36,14 @@ My research interests lie in **Generative AI** and **Computer Vision**, with a p
 
 {% include research_highlights.liquid %}
 
+
 <style>
+/* Profile photo size and position */
 .profile {
   width: 220px !important;
   max-width: 100%;
   margin-left: 25px;
+  margin-top: -30px;
 }
 
 .profile img {
@@ -49,12 +52,15 @@ My research interests lie in **Generative AI** and **Computer Vision**, with a p
   object-fit: contain;
 }
 
+/* Mobile layout */
 @media (max-width: 768px) {
   .profile {
     width: 180px !important;
     margin-left: 15px;
+    margin-top: 0;
   }
 }
 </style>
+
 
 
