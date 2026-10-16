@@ -36,8 +36,6 @@ My research interests lie in **Generative AI** and **Computer Vision**, with a p
 
 {% include research_highlights.liquid %}
 
-{% include research_highlights.liquid %}
-
 <style>
 .profile {
   width: 220px !important;
