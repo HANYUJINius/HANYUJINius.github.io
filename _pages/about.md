@@ -43,7 +43,7 @@ My research interests lie in **Generative AI** and **Computer Vision**, with a p
   width: 220px !important;
   max-width: 100%;
   margin-left: 25px;
-  margin-top: -30px;
+  margin-top: -85px;
 }
 
 .profile img {
