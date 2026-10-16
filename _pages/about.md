@@ -5,7 +5,7 @@ permalink: /
 subtitle: Research Intern at KAIST
 
 profile:
-  align: left
+  align: right
   image: prof_pic.jpg
   image_circular: true
   more_info: >
