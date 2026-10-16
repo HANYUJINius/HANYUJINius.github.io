@@ -1,37 +1,35 @@
 <div class="research-highlights">
 
-  <div class="row align-items-center mb-4">
-    <div class="col-4">
-      <div class="research-placeholder">
-        <i class="fas fa-image"></i>
-      </div>
+  <!-- Research Project 01 -->
+  <div class="research-item">
+    <div class="research-image">
+      <i class="fas fa-image"></i>
     </div>
-    <div class="col-8">
-      <h5 class="mb-2">Research Project 01</h5>
-      <p class="mb-2">
+
+    <div class="research-content">
+      <h5>Research Project 01</h5>
+      <p>
         Project description coming soon.
       </p>
       <a href="{{ '/projects/' | relative_url }}">
-        Learn More →
+        Learn More &rarr;
       </a>
     </div>
   </div>
 
-  <hr>
-
-  <div class="row align-items-center mb-4">
-    <div class="col-4">
-      <div class="research-placeholder">
-        <i class="fas fa-image"></i>
-      </div>
+  <!-- Research Project 02 -->
+  <div class="research-item">
+    <div class="research-image">
+      <i class="fas fa-image"></i>
     </div>
-    <div class="col-8">
-      <h5 class="mb-2">Research Project 02</h5>
-      <p class="mb-2">
+
+    <div class="research-content">
+      <h5>Research Project 02</h5>
+      <p>
         Project description coming soon.
       </p>
       <a href="{{ '/projects/' | relative_url }}">
-        Learn More →
+        Learn More &rarr;
       </a>
     </div>
   </div>
@@ -39,12 +37,31 @@
 </div>
 
 <style>
-.research-placeholder {
+.research-highlights {
   width: 100%;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.research-item {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--global-divider-color, #ddd);
+}
+
+.research-item:last-child {
+  border-bottom: none;
+}
+
+.research-image {
+  flex: 0 0 35%;
+  min-width: 0;
   aspect-ratio: 16 / 10;
   background: var(--global-card-bg-color, #eee);
   border: 1px solid var(--global-divider-color, #ddd);
-  border-radius: 6px;
+  border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -52,12 +69,51 @@
   font-size: 2rem;
 }
 
-.research-highlights h5 {
-  font-weight: 600;
+.research-content {
+  flex: 1;
+  min-width: 0;
 }
 
-.research-highlights p {
-  font-size: 0.9rem;
+.research-content h5 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 0 0 10px;
+}
+
+.research-content p {
+  font-size: 0.92rem;
+  line-height: 1.6;
   color: var(--global-text-color-light, #888);
+  margin-bottom: 10px;
+}
+
+.research-content a {
+  font-size: 0.88rem;
+  text-decoration: none;
+}
+
+.research-content a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 576px) {
+  .research-item {
+    gap: 14px;
+    padding: 16px 0;
+  }
+
+  .research-image {
+    flex-basis: 38%;
+    font-size: 1.4rem;
+  }
+
+  .research-content h5 {
+    font-size: 0.95rem;
+  }
+
+  .research-content p {
+    font-size: 0.82rem;
+  }
 }
 </style>
+
